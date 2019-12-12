@@ -5,7 +5,7 @@ module.exports = {
   module: {
 
   },
-  plugins: [],
+  plugins: [ ],
   output: {
 
   },
