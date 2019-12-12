@@ -1,0 +1,26 @@
+{
+  "name": "number-baseball",
+  "version": "1.0.0",
+  "description": "The Progressive JavaScript Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bum3144/LearnVuejs2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bum3144/LearnVuejs2019/issues"
+  },
+  "homepage": "https://github.com/bum3144/LearnVuejs2019#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
