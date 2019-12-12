@@ -1,0 +1,26 @@
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require('path');
+
+module.exports = {
+  mode: 'development', //개발시 'development' , 배포시 'production'
+  devtool: 'eval', //개발시 'eval', 배포시 'hidden-source-map',
+  resolve: {
+    extensions: ['.js', '.vue'], // main.js 파일에서 import의 확장자를 생략할수 있다
+  },
+  entry: {
+    app: path.join(__dirname, './main.js'),
+  },
+  module: {
+    rules: [{
+      test: /\.vue$/,
+      loader: 'vue-loader', //npm i vue-loader -D 로 다운받자 (use == loader)
+    }], //npm i vue-template-compiler -D 설치
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+  ],
+  output: {
+    filename: 'app.js', // [name].js 로 해줘도 된다
+    path: path.join(__dirname, 'dist'),
+  },
+};
